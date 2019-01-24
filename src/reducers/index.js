@@ -3,10 +3,10 @@ import { combineReducers } from "redux"
 // Static list of songs
 const songsReducer = () => {
     return [
-        {title: "No Scrubs", duration: "4:05"},
-        {title: "Macarena", duration: "2:30"},
-        {title: "All Star", duration: "3:15"},
-        {title: "I Want It That Way", duration: "1:45"}
+        { title: "No Scrubs", duration: "4:05" },
+        { title: "Macarena", duration: "2:30" },
+        { title: "All Star", duration: "3:15" },
+        { title: "I Want It That Way", duration: "1:45" }
     ]
 }
 
@@ -16,7 +16,7 @@ const selectedSongReducer = (selectedSong = null, action) => {
         return action.payload
     }
     return selectedSong
-} 
+}
 
 // Creation of combineReducers 
 export default combineReducers({
